@@ -27,3 +27,20 @@ public class trojkat {
         drawTriangle(4);
     }
 }
+public static void choinka(int n){
+        char choinka= 'x';
+        char spacja = '*';
+     
+        for (int i = 0 ; i < n; i++){
+            for(int j = 0 ; n-i>j ; j++) {
+                System.out.print(choinka);
+            }
+            for (int j = 0 ; j<i ; j++){
+                System.out.print(spacja);
+            }
+            for(int j =0 ; j<i+1; j++){
+                System.out.print(spacja);
+            }
+            System.out.println();
+        }
+    }
